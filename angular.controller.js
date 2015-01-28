@@ -1,18 +1,21 @@
 /**
  * Angular Controller with a named function using controllerAs syntax
  * WebStorm names: ngcontroller, ngctrl
+ * Recommended naming conventions:
+ * moduleName = lowercase,
+ * ControllerName = PascalCase
  */
 
 
 /**
- * $name$Controller
+ * $name$ Controller
  */
 angular
-	.module('app')
+	.module('$moduleName$')
 	.controller('$name$', $name$Ctrl);
 
 /* @ngInject */
-function $name$Ctrl ( $scope ) {
+function $name$Ctrl (  ) {
 	// "Controller as" the ViewModel
 	var vm = this;
 
@@ -20,13 +23,14 @@ function $name$Ctrl ( $scope ) {
 	// --------------------------------------------------
 	vm.data = [];
 
+	// Run
+	// --------------------------------------------------
+	activate();
+
 	// Private functions
 	// --------------------------------------------------
 	function activate () {
 
 	}
-
-	// Run
-	// --------------------------------------------------
-	activate();
 }
+

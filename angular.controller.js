@@ -12,7 +12,7 @@
  */
 angular
 	.module('$moduleName$')
-	.controller('$name$', $name$Ctrl);
+	.controller('$name$Ctrl', $name$Ctrl);
 
 /* @ngInject */
 function $name$Ctrl (  ) {

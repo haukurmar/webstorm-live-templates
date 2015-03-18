@@ -7,7 +7,7 @@
  * $name$Service
  */
 angular
-	.module('app')
+	.module('$moduleName$')
 	.service('$name$', $name$Service);
 
 /* @ngInject */

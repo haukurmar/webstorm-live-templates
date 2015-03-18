@@ -7,7 +7,7 @@
  * $name$Factory
  */
 angular
-	.module('app')
+	.module('$moduleName$')
 	.factory('$name$', $name$Factory);
 
 /* @ngInject */

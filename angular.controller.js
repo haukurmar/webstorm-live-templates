@@ -6,7 +6,6 @@
  * ControllerName = PascalCase
  */
 
-
 /**
  * $name$ Controller
  */
@@ -15,13 +14,14 @@ angular
 	.controller('$name$Ctrl', $name$Ctrl);
 
 /* @ngInject */
-function $name$Ctrl (  ) {
+function $name$Ctrl () {
 	// "Controller as" the ViewModel
 	var vm = this;
 
 	// Public ViewModel
 	// --------------------------------------------------
 	vm.data = [];
+	vm.someFunction = someFunction;
 
 	// Run
 	// --------------------------------------------------
@@ -32,5 +32,8 @@ function $name$Ctrl (  ) {
 	function activate () {
 
 	}
-}
 
+	function someFunction () {
+
+	}
+}

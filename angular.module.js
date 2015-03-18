@@ -5,9 +5,16 @@
  * moduleName = lowercase,
  */
 
-
 /**
  * $name$ module
  */
 angular
-	.module('$name$', []);
+	.module('$name$', [])
+	.config(Config);
+
+	// Config
+	// --------------------------------------------------
+	/* @ngInject */
+	function Config ($stateProvider, $urlRouterProvider) {
+
+	}
